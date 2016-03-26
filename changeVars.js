@@ -9,8 +9,8 @@ module.exports = function(fileInfo, api) {
   }, []);
 
   return api.jscodeshift(fileInfo.source)
-    .findVariableDeclarators(variableNodes[0].name)
-    .renameTo(variableNodes[0].name + 'Worked')
+    .findVariableDeclarators(variableNodes[0].name,variableNodes[1].name)
+    .renameTo(variableNodes[0].name + 'Worked', variableNodes[1].name + 'Worked')
     .toSource();
 
 };

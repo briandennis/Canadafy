@@ -1,6 +1,6 @@
-var helloWorked = 'world!';
+var helloWorkedWorked = 'world!';
 var isTrue = true;
 
 if(isTrue){
-  console.log(helloWorked);
+  console.log(helloWorkedWorked);
 }

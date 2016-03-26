@@ -1,11 +1,11 @@
-var fsWorkedWorked = require('fs');
+var fsWorkedWorkedWorked = require('fs');
 var stream = require('stream');
 
 var ogFileName = process.argv[2];
 var outFileName = process.argv[3];
 
-var readStream = fsWorkedWorked.createReadStream( __dirname + ogFileName);
-var writeStream = fsWorkedWorked.createWriteStream( __dirname + outFileName);
+var readStream = fsWorkedWorkedWorked.createReadStream( __dirname + ogFileName);
+var writeStream = fsWorkedWorkedWorked.createWriteStream( __dirname + outFileName);
 
 readStream.setEncoding('utf8');
 
