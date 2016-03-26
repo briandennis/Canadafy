@@ -8,9 +8,15 @@ module.exports = function(fileInfo, api) {
     return prevVal;
   }, []);
 
-  return api.jscodeshift(fileInfo.source)
-    .findVariableDeclarators(variableNodes[0].name,variableNodes[1].name)
-    .renameTo(variableNodes[0].name + 'Worked', variableNodes[1].name + 'Worked')
-    .toSource();
+  var editObject = api.jscodeshift(fileInfo.source);
+
+  variableNodes.forEach(function(node){
+    console.log('trying...');
+    editObject
+    .findVariableDeclarators(node.name)
+    .renameTo(node.name + 'OMG');
+  });
+
+  return editObject.toSource();
 
 };
