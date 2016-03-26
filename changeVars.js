@@ -14,7 +14,7 @@ module.exports = function(fileInfo, api) {
     console.log('trying...');
     editObject
     .findVariableDeclarators(node.name)
-    .renameTo(node.name + 'OMG');
+    .renameTo(node.name + 'Eh');
   });
 
   return editObject.toSource();

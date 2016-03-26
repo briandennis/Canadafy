@@ -1,6 +1,5 @@
-var helloOMGOMG = 'world!';
-var isTrueOMGOMG = true;
+var testingEhEh = 'hello';
 
-if(isTrueOMGOMG){
-  console.log(helloOMGOMG);
-}
+var myAgeEhEh = 20;
+
+var isTrueEhEh = false;
